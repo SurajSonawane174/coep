@@ -16,52 +16,104 @@ const Navbar = () => {
 
       {/* Menu Items */}
       <div className="hidden md:flex space-x-6">
-        <Link to="/" className="hover:text-gray-400">Home</Link>
-        
+        <Link to="/" className="hover:text-gray-400">
+          Home
+        </Link>
+
         {/* Services Dropdown */}
-        <div 
+        <div
           className="relative"
           onMouseEnter={() => setServicesDropdown(true)}
           onMouseLeave={() => setServicesDropdown(false)}
         >
           <button className="flex items-center space-x-1 hover:text-gray-400">
             <span>Services</span>
-            <ChevronDown className={`w-5 h-5 transition-transform ${servicesDropdown ? 'rotate-180' : 'rotate-0'}`} />
+            <ChevronDown
+              className={`w-5 h-5 transition-transform ${
+                servicesDropdown ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </button>
           {servicesDropdown && (
             <div className="absolute left-0 mt-0 w-40 bg-gray-900 text-white rounded-lg shadow-md py-2 border border-gray-700 z-50">
-              <Link to="/web-development" className="block px-4 py-2 hover:bg-gray-800">Web Development</Link>
-              <Link to="/app-development" className="block px-4 py-2 hover:bg-gray-800">App Development</Link>
-              <Link to="/seo-optimization" className="block px-4 py-2 hover:bg-gray-800">SEO Optimization</Link>
+              <Link
+                to="/web-development"
+                className="block px-4 py-2 hover:bg-gray-800"
+              >
+                Web Development
+              </Link>
+              <Link
+                to="/app-development"
+                className="block px-4 py-2 hover:bg-gray-800"
+              >
+                App Development
+              </Link>
+              <Link
+                to="/seo-optimization"
+                className="block px-4 py-2 hover:bg-gray-800"
+              >
+                SEO Optimization
+              </Link>
             </div>
           )}
         </div>
 
-        <Link to="/hackathon" className="hover:text-gray-400">Hackathons</Link>
-        <Link to="/notice" className="hover:text-gray-400">Notices</Link>
-        <Link to="/events" className="hover:text-gray-400">Events</Link>
+        <Link to="/hackathon" className="hover:text-gray-400">
+          Hackathons
+        </Link>
+        <Link to="/notice" className="hover:text-gray-400">
+          Notices
+        </Link>
+        <Link to="/events" className="hover:text-gray-400">
+          Events
+        </Link>
 
         {/* Important Links Dropdown */}
-        <div 
+        <div
           className="relative"
           onMouseEnter={() => setImpLinksDropdown(true)}
           onMouseLeave={() => setImpLinksDropdown(false)}
         >
           <button className="flex items-center space-x-1 hover:text-gray-400">
             <span>Important Links</span>
-            <ChevronDown className={`w-5 h-5 transition-transform ${impLinksDropdown ? 'rotate-180' : 'rotate-0'}`} />
+            <ChevronDown
+              className={`w-5 h-5 transition-transform ${
+                impLinksDropdown ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </button>
           {impLinksDropdown && (
             <div className="absolute left-0 mt-0 w-40 bg-gray-900 text-white rounded-lg shadow-md py-2 border border-gray-700 z-50">
-              <Link to="/moodle" className="block px-4 py-2 hover:bg-gray-800">Moodle</Link>
-              <Link to="/mis" className="block px-4 py-2 hover:bg-gray-800">MIS</Link>
-              <Link to="/login" className="block px-4 py-2 hover:bg-gray-800">Login</Link>
+              <a
+                href="https://moodle.coep.org.in/moodle/login/index.php"
+                target="_blank"
+                rel="noopener noreferrer  "
+                className="block px-4 py-2 hover:bg-gray-800"
+              >
+                Moodle
+              </a>
+              <a
+                href="http://portal.coep.org.in:9093/SignUp?ReturnUrl=%2f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 hover:bg-gray-800"
+              >
+                MIS
+              </a>
+              <a
+                href="https://login.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-2 hover:bg-gray-800"
+              >
+                Login
+              </a>
             </div>
           )}
         </div>
       </div>
 
-      {/* Rightmost Login Icon */}  
+      {/* Rightmost Login Icon */}
       <div>
         <Link to="/login">
           <LogIn className="w-6 h-6 cursor-pointer hover:text-gray-400" />

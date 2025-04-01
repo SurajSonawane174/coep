@@ -1,8 +1,10 @@
 
 import { GoogleGeminiEffectDemo } from "./Google_effect_demo";
-import { CardHoverEffectDemo } from "./CardHoverEffectDemo";
+import { CardHoverEffectDemo } from "./CardHoverEffectDemo";//featues
 import { SparklesPreview } from "./sparkleDemo";
 import SearchBoxWithFilters from "./Search";
+// import AdvancedFilter from "./filter";
+import ContactForm from "./Contact";
 
 
 export default function Home (){
@@ -11,7 +13,9 @@ export default function Home (){
             <GoogleGeminiEffectDemo />  
             <SparklesPreview />
             <CardHoverEffectDemo />   
-            <SearchBoxWithFilters />
+            {/* <SearchBoxWithFilters /> */}
+            {/* <AdvancedFilter /> */}
+            <ContactForm />
         </div>
     )
 };

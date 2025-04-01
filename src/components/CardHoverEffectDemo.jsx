@@ -12,17 +12,17 @@ export const projects = [
   {
     title: "📜 Previous Year Papers",
     description: "Access past exam papers for all branches and years to help with your preparation.",
-    link: "/previous-year-papers",
+    link: "/filter",
   },
   {
     title: "📝 Lecture Notes",
     description: "Download well-structured notes for all subjects, prepared by top students and faculty.",
-    link: "/notes",
+    link: "/filter",
   },
   {
     title: "📚 Books & Study Material",
     description: "Get recommended textbooks, reference books, and extra study materials in one place.",
-    link: "/books-and-materials",
+    link: "/filter",
   },
   {
     title: "💻 Hackathons & Competitions",
@@ -55,19 +55,5 @@ export const projects = [
     description: "Find financial aid, scholarship opportunities, and eligibility criteria for students.",
     link: "/scholarships",
   },
-  {
-    title: "🚀 Competitive Exam Prep",
-    description: "Access resources for GATE, CAT, GRE, and other competitive exams.",
-    link: "/exam-prep",
-  },
-  {
-    title: "🏫 College Clubs & Communities",
-    description: "Join technical, cultural, and sports clubs to connect with like-minded students.",
-    link: "/clubs",
-  },
-  {
-    title: "📌 Study Groups & Doubt Sessions",
-    description: "Join or create study groups to discuss doubts, share resources, and collaborate on studies.",
-    link: "/study-groups",
-  },
+  ,
 ];

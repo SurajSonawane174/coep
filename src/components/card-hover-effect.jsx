@@ -1,6 +1,7 @@
 import { cn } from "../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
@@ -8,8 +9,8 @@ export const HoverEffect = ({ items, className }) => {
   return (
     <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 bg-black text-white", className)}>
       {items.map((item, idx) => (
-        <a
-          href={item?.link}
+        <Link
+          to={item?.link} // Using `to` instead of `href`
           key={item?.link}
           className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -30,7 +31,7 @@ export const HoverEffect = ({ items, className }) => {
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-        </a>
+        </Link>
       ))}
     </div>
   );
