@@ -6,6 +6,8 @@ import SearchBoxWithFilters from "./Search";
 // import AdvancedFilter from "./filter";
 import ContactForm from "./Contact";
 
+// import TabsDemo from "./TabsDemo";
+
 
 export default function Home (){
     return (
@@ -15,6 +17,7 @@ export default function Home (){
             <CardHoverEffectDemo />   
             {/* <SearchBoxWithFilters /> */}
             {/* <AdvancedFilter /> */}
+            {/* <TabsDemo /> */}
             <ContactForm />
         </div>
     )

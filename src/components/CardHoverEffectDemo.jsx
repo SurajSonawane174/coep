@@ -37,7 +37,7 @@ export const projects = [
   {
     title: "🎓 Internship & Placement Prep",
     description: "Get resources, past interview experiences, and preparation materials for placements.",
-    link: "/placement-prep",
+    link: "/Placement",
   },
   {
     title: "🎭 College Events & Workshops",

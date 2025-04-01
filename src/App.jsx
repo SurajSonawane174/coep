@@ -8,6 +8,8 @@ import FloatingSocialShare from "./components/FloatinnShare";
 import "./App.css";
 import Footer from "./components/Footer";
 import AdvancedFilter from "./components/filter";
+// import TabsDemo from "./components/TabsDemo";
+import Placement from "./components/placement";
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/notice" element={<NoticeBoard />} />
         <Route path="/filter" element={<AdvancedFilter />} />
+        <Route path="/placement" element={<Placement />} />
       </Routes>
       <FloatingSocialShare /> {/* Keep this outside if it's common for all pages */}
       <Footer />  
